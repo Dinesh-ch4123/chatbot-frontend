@@ -17,7 +17,7 @@ function App() {
     return endpoint || 'Home';
   };
 
-  const fetchSteps = async (endpoint) => {
+  const fetchSteps = async (endpoint) => { 
     try {
       const response = await fetch(`http://localhost:3000/web/${endpoint}`);
       if (!response.ok) {
